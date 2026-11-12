@@ -1,0 +1,9 @@
+tests/*
+
+# Private API settings and generated credentials
+/config.ini
+# Additional local settings and credentials; keep the public template tracked.
+/*.ini
+!/config.example.ini
+*.env
+/credentials/

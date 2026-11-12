@@ -40,6 +40,7 @@ tui = [
 [project.scripts]
 hpc-pilot = "hpc_pilot.cli:main"
 hpc-pilot-gateway = "hpc_pilot.gateway:main"
+hpc-pilot-api = "hpc_pilot.api.cli:main"
 
 [build-system]
 requires = ["setuptools>=68"]
@@ -47,6 +48,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["hpc_pilot*"]
+
+[tool.setuptools.package-data]
+"hpc_pilot.api" = ["config.example.ini"]
 
 [tool.ruff]
 line-length = 100
